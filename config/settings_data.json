@@ -1,8 +1,10 @@
 {
   "current": {
     "storefront_hostname": "wigcollection.co.uk",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Frame_1520_1.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
     "checkout_logo_size": "small",
+    "checkout_accent_color": "#121212",
+    "checkout_button_color": "#121212",
     "content_for_index": [
 
     ]

@@ -1,6 +1,7 @@
 {
   "current": {
     "storefront_hostname": "wigcollection.co.uk",
+    "multipass_login": true,
     "colors_accent_1": "#202020",
     "colors_accent_2": "#fae57b",
     "colors_text": "#202020",

@@ -1,0 +1,23 @@
+/* Contents of slick-styles.css */
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+/* Carousel arrow styles */
+.slick-prev {
+  left: -13px !important;
+}
+
+.slick-next {
+  right: -10px !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  display: none !important;
+}
+
+/* Banner carousel styles */
+#banner-container .slick-slide > div {
+  text-align: center;
+}

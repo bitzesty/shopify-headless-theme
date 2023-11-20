@@ -1,0 +1,92 @@
+{% comment %}
+ EComposer (https://ecomposer.io)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from EComposer
+ At 2023-11-20 21:01:47
+ {% endcomment %} 
+ 
+ {% assign ecom_root_url = routes.root_url %}
+ {% if ecom_root_url != '/'%}
+ {% assign ecom_root_url = routes.root_url | append: '/' %}
+ {% endif %}
+ <link rel="stylesheet" media="print" onload="this.media='all'" id="ecom-vendors-modal_css" href="https://cdn.ecomposer.app/vendors/css/ecom_modal.css" /><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /><noscript><link rel="stylesheet" media="all" onload="this.media='all'" id="ecom-vendors-modal_css" href="https://cdn.ecomposer.app/vendors/css/ecom_modal.css" /><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /></noscript><script type="text/javascript" asyc="async" id="ecom-vendors-modal_js" src="https://cdn.ecomposer.app/vendors/js/ecom_modal.js" ></script>
+{%capture section_id %}ecom-655bc460a38d928f56049359-article{% endcapture%}{% if section and section_id == section.id and headless == true %}
+{{ content_for_header }}
+{% render 'ecom_header', ECOM_THEME: true %}{% endif %}
+{{'ecom-655bc460a38d928f56049359.css' | asset_url | stylesheet_tag }}
+<script src="{{'ecom-655bc460a38d928f56049359.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" class="ecom-page-info">
+ window.EComposer = window.EComposer || {};
+ window.EComposer.TEMPLATE_ID="655bc460a38d928f56049359";
+ window.EComposer.TEMPLATE = {"template_id":"655bc460a38d928f56049359","title":"InspirationTwo","type":"article","slug":"ecom-655bc460a38d928f56049359","plan_id":1};
+ </script>
+<div class="ecom-builder" id="ecom-655bc460a38d928f56049359"><div class="ecom-sections" data-section-id="{{section.id}}">
+ {% unless tmp_block %}{% assign tmp_block = blog %}{% endunless %}
+ {%- capture article_selected -%}{%- endcapture-%}
+ {% assign article_selected = article_selected | strip %}
+ {%- if request.page_type != 'article' and article_selected != blank -%}
+ {%- assign article = articles[article_selected]-%}
+ {% assign blog_handle = article_selected | split: '/' | first %}
+ {% assign blog = blogs[blog_handle] %}
+ {%- endif -%}
+ <section class="ecom-row ecom-core ecom-section ecom-egbqttbqaeq" data-id="ecom-egbqttbqaeq" style="z-index: inherit;"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-brdvytppjsv"><div class="core__column--wrapper"><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-5qsxmbch6ar" data-core-is="block"><div class="ecom-element ecom-shopify-elements ecom-shopify__article--image" deep="1"><div class="ecom-shopify__article--image-wrapper">
+ {% if article != empty %}
+ {% if article.image %}
+ <div class="ecom-shopify__article-hero-container ecom-image-align">
+ <div class="ecom-shopify__article-hero-image ecom-image-default"
+ itemprop="image"
+ >
+ <img srcset="
+ {% if article.image.width >= 350 %}{{ article.image | img_url: '350x' }} 350w,{% endif %}
+ {% if article.image.width >= 700 %}{{ article.image | img_url: '700x' }} 700w,{% endif %}
+ {% if article.image.width >= 749 %}{{ article.image | img_url: '749x' }} 749w,{% endif %}
+ {% if article.image.width >= 1498 %}{{ article.image | img_url: '1498x' }} 1498w,{% endif %}
+ {% if article.image.width >= 1100 %}{{ article.image | img_url: '1100x' }} 1100w,{% endif %}
+ {% if article.image.width >= 2200 %}{{ article.image | img_url: '2200x' }} 2200w,{% endif %}"
+ sizes="(min-width: 1200px) 1100px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+ src="{{ article.image | img_url: '1100x' }}"
+ loading="lazy"
+ width="{{ article.image.width }}"
+ height="{{ article.image.height }}"
+ alt="{{ article.image.alt | escape }}">
+ </div>
+ </div>
+ {% endif %}
+ {% else %}
+ <div>Please select the article in settings</div>
+ {% endif %}
+ </div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-6pt7ifg97fb" data-core-is="block"><div class="ecom-element ecom-shopify-elements ecom-shopify__article-title" deep="1"><div class="ecom-shopify__article--title-wrapper"><div class="ecom-shopify__article--title-container">
+ {% if article != empty %}
+ <h2 itemprop="headline" class="ecom-shopify__article--title-text" href="{{article.url}}" title="{{article.title | escape }}">{{article.title | escape }}</h2>
+ {% else %}
+ <div>Please select the article in settings</div>
+ {% endif %}
+ </div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-uzbe00a8nzj" data-core-is="block"><div class="ecom-element ecom-shopify-elements ecom-shopify__article--description" deep="1"><div class="ecom-shopify__article__description-wrapper"><div class="ecom-shopify__article__description-container" content_type="text"><div class="ecom-shopify__article__description--paragraph"><span>{{ article.content | strip_html }}</span></div></div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-kbm5kqhwxhl" data-core-is="block"><div class="ecom-element ecom-shopify-elements ecom-shopify__article--excerpt" deep="1"><div class="ecom-shopify__article__excerpt-wrapper"><div class="ecom-shopify__article__excerpt-container" excerpt_type="text"><div class="ecom-shopify__article__excerpt--paragraph"><span>
+ {%- if article.excerpt != empty -%}
+ {{ article.excerpt | strip_html }}
+ {%- endif -%}
+ {%- if EComBuilderMode and article.excerpt == empty -%}
+ <div>This Article don't have Excerpt</div>
+ {%- endif -%}
+ </span></div></div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-06ywso57dhju" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-2cfvwxivu46" data-id="ecom-2cfvwxivu46" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first ecom-eipw3lfo8ak"><div class="core__column--wrapper"><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-4s0hnaqa105" data-core-is="block"><div class="ecom-element ecom-base-image" deep="2"><figure><div class="ecom-container-image ecom-image-align"><div class="ecom-image-content-position ecom-image-default ecom-base-image-container-overlay"><picture class="ecom-image-picture"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0727/6779/9618/files/img.png?v=1700513082" alt="img" width="1780" height="1920" style=""></picture></div></div></figure></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> <div class="ecom-column ecom-core core__column--last ecom-3x3cjdd1nnw"><div class="core__column--wrapper"><div class="core__blocks" index="1"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-gno77r0f5yv" data-core-is="block"><div class="ecom-element ecom-base-image" deep="2"><figure><div class="ecom-container-image ecom-image-align"><div class="ecom-image-content-position ecom-image-default ecom-base-image-container-overlay"><picture class="ecom-image-picture"><img loading="lazy" src="https://ecomposer.app/images/placeholder.png" alt="undefined" style=""></picture></div></div></figure></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div></div> </div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div></section> 
+</div></div>
+{% schema %}
+{
+ "name": "InspirationTwo",
+ "locales": {
+ "en": {}
+ },
+ "settings": [
+ {
+ "type": "header",
+ "content": "The section was generated by [Ecomposer](https:\/\/ecomposer.io).",
+ "info": "\n EComposer is a Visual Page Builder app on Shopify AppStore.\n It provides 100+ pre-built templates in library,\n so you can build unlimited pages that you can imagine with it.\n "
+ },
+ {
+ "type": "header",
+ "content": "[EDIT WITH EComposer APP \u2192](https:\/\/ecomposer.app\/shop\/builder?page=article&id=655bc460a38d928f56049359&utm_source=theme-customize)",
+ "info": "(*You must install the app to start editing this section [Learn more](https:\/\/help.ecomposer.io\/docs\/getting-started\/installation\/))"
+ }
+ ]
+}
+{% endschema %}

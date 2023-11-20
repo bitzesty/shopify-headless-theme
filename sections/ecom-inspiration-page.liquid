@@ -1,0 +1,299 @@
+{% comment %}
+ EComposer (https://ecomposer.io)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from EComposer
+ At 2023-11-20 20:11:09
+ {% endcomment %} 
+ 
+ {% assign ecom_root_url = routes.root_url %}
+ {% if ecom_root_url != '/'%}
+ {% assign ecom_root_url = routes.root_url | append: '/' %}
+ {% endif %}
+ <link rel="stylesheet" media="print" onload="this.media='all'" id="ecom-vendors-slider_css" href="https://cdn.ecomposer.app/vendors/css/ecom-swiper@10.3.1.css" /><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /><noscript><link rel="stylesheet" media="all" onload="this.media='all'" id="ecom-vendors-slider_css" href="https://cdn.ecomposer.app/vendors/css/ecom-swiper@10.3.1.css" /><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /></noscript><script type="text/javascript" asyc="async" id="ecom-vendors-slider_js" src="https://cdn.ecomposer.app/vendors/js/ecom-swiper@10.3.1.js" ></script>
+{%capture section_id %}ecom-inspiration-page{% endcapture%}{% if section and section_id == section.id and headless == true %}
+{{ content_for_header }}
+{% render 'ecom_header', ECOM_THEME: true %}{% endif %}<link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+{{'ecom-655bbca1aa9fb861c60bece2.css' | asset_url | stylesheet_tag }}
+<script src="{{'ecom-655bbca1aa9fb861c60bece2.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" class="ecom-page-info">
+ window.EComposer = window.EComposer || {};
+ window.EComposer.TEMPLATE_ID="655bbca1aa9fb861c60bece2";
+ window.EComposer.PAGE = {"template_id":"655bbca1aa9fb861c60bece2","title":"Inspiration","type":"page","slug":"ecom-inspiration","plan_id":1};
+ </script>
+<div class="ecom-builder" id="ecom-inspiration"><div class="ecom-sections" data-section-id="{{section.id}}">
+ {% unless tmp_block %}{% assign tmp_block = blog %}{% endunless %}
+ {%- capture article_selected -%}magazine/a-tour-of-our-bright-and-inviting-kitchen-my-absolute-favorite-room-in-the-house{%- endcapture-%}
+ {% assign article_selected = article_selected | strip %}
+ {%- if request.page_type != 'article' and article_selected != blank -%}
+ {%- assign article = articles[article_selected]-%}
+ {% assign blog_handle = article_selected | split: '/' | first %}
+ {% assign blog = blogs[blog_handle] %}
+ {%- endif -%}
+ <section class="ecom-row ecom-core ecom-section ecom-m1xitsllw2" data-id="ecom-m1xitsllw2" style="z-index: inherit;"><div data-deep="1" class="core__row--columns core__row--full"><div class="ecom-column ecom-core core__column--first core__column--last ecom-5qg5l4hpm5j"><div class="core__column--wrapper"><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-k82qfpg4xjl" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-t6d1kr09ll" data-id="ecom-t6d1kr09ll" style="z-index: inherit;"><div data-deep="2" class="core__row--columns core__row--full"><div class="ecom-column ecom-core core__column--first core__column--last ecom-p6ptlqbel9r"><div class="core__column--wrapper"><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-6kuaxif5k8b" data-core-is="block"><div class="ecom-element ecom-shopify-elements ecom-shopify__article-title" deep="2"><div class="ecom-shopify__article--title-wrapper"><div class="ecom-shopify__article--title-container">
+ {% if article != empty %}
+ <h2 itemprop="headline" class="ecom-shopify__article--title-text" href="{{article.url}}" title="{{article.title | escape }}">{{article.title | escape }}</h2>
+ {% else %}
+ <div>Please select the article in settings</div>
+ {% endif %}
+ </div></div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div></div> </div> <div class="ecom-block ecom-core core__block elmspace ecom-7aw87vze9wv" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-jihsuqxi15" data-id="ecom-jihsuqxi15" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-o8s0jqlkhx9"><div class="core__column--wrapper"><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-uvy715fxvhj" data-core-is="block"><div class="ecom-row ecom-core core__block ecom-ii6j1nfbc3" data-id="ecom-ii6j1nfbc3" style="z-index: inherit;"><div data-deep="3" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-oxdn6lwc1ze"><div class="core__column--wrapper"><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-r4grh6vdmfk" data-core-is="block"><div class="ecom-element ecom-shopify-elements ecom-shopify__article--tags" deep="3"><div class="ecom-shopify__article--tags-wrapper ecom-flex ecom-column"><div class="ecom-shopify__article--tags-inner">
+ {%- capture limit -%}10{%-endcapture-%}
+ {% assign limit = limit | plus: 0 %}
+ {% assign tmpl = '' %}
+ {% if template.suffix %}
+ {% assign tmpl = '?view=' | append: template.suffix %}
+ {% endif %}
+ {% if article and article.tags %}
+ <ul class="ecom-shopify__article--tags-items ecom-flex ecom-wrap">
+ {% for tag in article.tags limit: limit %}
+ <li class="ecom-shopify__article--tags-item">
+ <a href="{{ecom_root_url}}blogs/{{blog.handle}}/tagged/{{tag | handleize }}{{tmpl}}">{{ tag }}</a>
+ </li>
+ {% endfor %}
+ </ul>
+ {% else %}
+ <div>Please select the article in settings</div>
+ {% endif %}
+ </div></div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div></div> </div> <div class="ecom-block ecom-core core__block elmspace ecom-ye6ibgvm6g" data-core-is="block"><div class="ecom-row ecom-core core__block ecom-ta944rqow1e" data-id="ecom-ta944rqow1e" style="z-index: inherit;"><div data-deep="3" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-js0eashau8"><div class="core__column--wrapper"><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block ecom-zog6j4yvjp" data-core-is="block"><div class="ecom-element ecom-shopify-elements ecom-shopify__article-author" deep="3"><div class="ecom-shopify__article-author--wrapper"><div class="ecom-shopify__article-author--container ecom-flex"><div class="ecom-shopify__article-author--avatar">
+ 
+ {%- if article.user.email -%}
+ <div class="ecom-image-default">
+ <img src="https://www.gravatar.com/avatar/{{ article.user.email | downcase | md5 }}" alt="{{ article.author }}">
+ </div>
+ {%- endif -%}
+ 
+ </div><div class="ecom-shopify__article-author-information ecom-flex ecom-column"><div class="ecom-shopify__article-author--text">
+ {% if article != empty %}
+ {{article.author}}
+ {% else %}
+ <div>Please select the article in settings</div>
+ {% endif %}
+ </div></div></div></div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div></div> </div> <div class="ecom-block ecom-core core__block elmspace ecom-3th3j8pyxzs" data-core-is="block"><div class="ecom__element ecom-element element__divi" deep="2"><div class="ecom__element-divi"><div class="divi-line divi-style" style="display: block;"></div><div class="divi-cont" style="--divider-width: 100%; --divider-width-tablet: 100%; display: none;"><div class="divi-cont-before divi-style" style="display: block;"></div><div class="divi-cont-after divi-style" style="display: block;"></div></div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-u1pevohge2" data-core-is="block"><div class="ecom-element ecom-shopify-elements ecom-shopify__article-prev_next" deep="2"><div class="ecom-shopify__article--prev_next-wrapper"><div class="ecom-shopify__article--prev_next-container ecom-flex ecom-fl_between"><div class="ecom-shopify__article--prev">
+ {%- liquid
+ assign prev_article = blog.previous_article
+ if EComBuilderMode
+ assign prev_article = blog.articles.first
+ endif
+ -%}
+ {%- if prev_article -%}
+ <div class="ecom-shopify__article--prev-content ecom-flex ecom-column">
+ 
+ <div class="ecom-shopify__article--item-heading ecom-shopify__article--item-heading-prev ecom-flex ecom-al_center">
+ 
+ <a href="{{prev_article.url}}" alt="{{prev_article.title}}">{{ 'sections.ecom-inspiration-page.prev_title_u1pevohge2_html' | t }}</a>
+ </div>
+ 
+ <div class="ecom-shopify__article--item-body ecom-flex">
+ 
+ {%- if prev_article.image -%}
+ <div class="ecom-shopify__article--item-image ecom-col-auto">
+ <div class="ecom-image-default">
+ <img src="{{ prev_article.image | img_url: '360x'}}" alt="{{ prev_article.image.src.alt | escape }}" />
+ </div>
+ </div>
+ {%- endif -%}
+ 
+ 
+ <div class="ecom-shopify__article--item-content ecom-flex ecom-column ecom-col">
+ 
+ <div class="ecom-shopify__article--item-title ecom-shopify__article--item-title-prev">
+ <a href="{{prev_article.url}}" alt="{{prev_article.title}}">{{ prev_article.title }}</a>
+ </div>
+ 
+ 
+ <div class="ecom-shopify__article--item-time ecom-flex ecom-al_center">
+ 
+ <span class="ecom-shopify__article--item-icon ecom-flex ecom-al_center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M272 251.2L333.3 343.1C338.2 350.5 336.2 360.4 328.9 365.3C321.5 370.2 311.6 368.2 306.7 360.9L242.7 264.9C240.9 262.2 240 259.2 240 255.1V111.1C240 103.2 247.2 95.1 256 95.1C264.8 95.1 272 103.2 272 111.1L272 251.2zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 32C132.3 32 32 132.3 32 256C32 379.7 132.3 480 256 480C379.7 480 480 379.7 480 256C480 132.3 379.7 32 256 32z"></path></svg></span>
+ 
+ <span>{{ prev_article.published_at | time_tag: format: 'abbreviated_date' }}</span>
+ </div>
+ 
+ </div>
+ 
+ </div>
+ </div>
+ {%- endif -%}
+ </div><div class="ecom-shopify__article--next">
+ {%- liquid
+ assign next_article = blog.next_article
+ if EComBuilderMode
+ assign next_article = blog.articles.last
+ endif
+ -%}
+ {%- if next_article -%}
+ <div class="ecom-shopify__article--next-content ecom-flex ecom-column">
+ 
+ <div class="ecom-shopify__article--item-heading ecom-shopify__article--item-heading-next ecom-flex ecom-al_center ecom-fl_right">
+ 
+ <a href="{{next_article.url}}" alt="{{next_article.title}}">{{ 'sections.ecom-inspiration-page.next_title_u1pevohge2_html' | t }}</a>
+ </div>
+ 
+ <div class="ecom-shopify__article--item-body ecom-flex">
+ 
+ {%- if next_article.image -%}
+ <div class="ecom-shopify__article--item-image ecom-col-auto">
+ <div class="ecom-image-default">
+ <img src="{{ next_article.image | img_url: '360x'}}" alt="{{ next_article.image.src.alt | escape }}" />
+ </div>
+ </div>
+ {%- endif -%}
+ 
+ 
+ <div class="ecom-shopify__article--item-content ecom-flex ecom-column ecom-col">
+ 
+ <div class="ecom-shopify__article--item-title ecom-shopify__article--item-title-next">
+ <a href="{{next_article.url}}" alt="{{next_article.title}}">{{ next_article.title }}</a>
+ </div>
+ 
+ 
+ <div class="ecom-shopify__article--item-time ecom-flex ecom-al_center ecom-fl_right">
+ 
+ <span class="ecom-shopify__article--item-icon ecom-flex ecom-al_center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M272 251.2L333.3 343.1C338.2 350.5 336.2 360.4 328.9 365.3C321.5 370.2 311.6 368.2 306.7 360.9L242.7 264.9C240.9 262.2 240 259.2 240 255.1V111.1C240 103.2 247.2 95.1 256 95.1C264.8 95.1 272 103.2 272 111.1L272 251.2zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 32C132.3 32 32 132.3 32 256C32 379.7 132.3 480 256 480C379.7 480 480 379.7 480 256C480 132.3 379.7 32 256 32z"></path></svg></span>
+ 
+ <span>{{ next_article.published_at | time_tag: format: 'abbreviated_date' }}</span>
+ </div>
+ 
+ </div>
+ 
+ </div>
+ </div>
+ {%- endif -%}
+ </div></div></div></div></div> <div class="ecom-block ecom-core core__block ecom-xu6l6ijeklk" data-core-is="block"><div class="ecom__element ecom-element element__divi" deep="2"><div class="ecom__element-divi"><div class="divi-line divi-style" style="display: block;"></div><div class="divi-cont" style="--divider-width: 100%; --divider-width-tablet: 100%; display: none;"><div class="divi-cont-before divi-style" style="display: block;"></div><div class="divi-cont-after divi-style" style="display: block;"></div></div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-odmvfnmyj97" data-core-is="block"><div class="ecom-element ecom-shopify-elements ecom-shopify__blog" deep="2"><div class="ecom-shopify__blog-wrapper"><div class="ecom-shopify__blog-container" data-items-on-row="4">
+ {% unless tmp_block %}
+ {% assign tmp_block = blog %}
+ {% endunless %}
+ {%- capture stringBlog -%}{%- endcapture-%}
+ {% assign blog_handles = stringBlog | split: ',' %}
+ 
+ <div class="ecom-grid ecom-shopify__blog--posts" style="display:grid">
+ {% assign count = 1 %}
+ 
+ 
+ {% if blog != null %}
+ {%- capture limit -%}4{%-endcapture-%}
+ {% assign limit = limit | plus: 0 %}
+ {% assign tmp_article = article %}
+ 
+ 
+ {%- paginate blog.articles by limit -%}
+ {% for article in blog.articles %}
+ {% if count > limit %}{% break%}{% endif %}
+ {% assign count = count | plus: 1%}
+ 
+ <div class="ecom-shopify__blog--post ecom-shopify__blog-vertical">
+ 
+ <div class="ecom-shopify__blog--post-thumbnail--img">
+ <div class="ecom-shopify__blog--post-thumbnail ecom-image-align {% if article.image == blank %} ecom-shopify__blog--post-no-thumbnail{% endif %}">
+ {%- if article.image -%}
+ {%- liquid
+ assign featured_media_aspect_ratio = article.featured_media.aspect_ratio
+ if article.featured_media.aspect_ratio == nil
+ assign featured_media_aspect_ratio = 1
+ endif
+ -%}
+ <a style="text-decoration:none" href="{{article.url}}" class="ecom-shopify__blog--post-link ecom-image-default" data-blog-handle="{{article.handle}}">
+ <img srcset="
+ {%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
+ {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
+ {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
+ {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
+ {%- if article.image.src.width >= 940 -%}{{ article.image.src | img_url: '940x' }} 940w,{%- endif -%}
+ {%- if article.image.src.width >= 1066 -%}{{ article.image.src | img_url: '1066x' }} 1066w{%- endif -%}"
+ src="{{ article.image.src | img_url: '533x' }}"
+ sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+ alt="{{ article.image.src.alt | escape }}"
+ width="{{ article.image.width }}"
+ height="{{ article.image.height }}"
+ loading="lazy"
+ >
+ </a>
+ {%- endif -%}
+ </div>
+ </div>
+ <div class="ecom-shopify__blog--posts-details">
+ 
+ 
+ <div class="ecom-shopify__blog--post-tags ecom-shopify__blog--post-informations">
+ {% assign tmpl = '' %}
+ {% if template.suffix %}
+ {% assign tmpl = '?view=' | append: template.suffix %}
+ {% endif %}
+ {% if article.tags.size %}
+ <ul>
+ {% for tag in article.tags %}
+ <li>
+ <a href="{{ecom_root_url}}blogs/{{blog.handle}}/tagged/{{tag | handleize }}{{tmpl}}">{{ tag }}</a>
+ </li>
+ {% endfor %}
+ </ul>
+ {% endif %}
+ </div>
+ <a href="{{article.url }}" class="ecom-shopify__blog--post-link" data-blog-handle="{{article.handle}}"><h2 class="ecom-shopify__blog--post-title">{{article.title}}</h2></a>
+ <div class="ecom-shopify__blog--post-group-4 ecom-flex ecom-al_center undefined">
+ 
+ 
+ <div class="ecom-shopify__blog--post-published-at ecom-shopify__blog--post-informations">
+ {% assign published_at = article.published_at | time_tag: format: 'abbreviated_date' %}
+ 
+ <span class="ecom-shopify__blog--post-informations-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M280 248.7L339.1 338.7C347.3 349.7 344.3 364.6 333.3 371.1C322.3 379.3 307.4 376.3 300 365.3L236 269.3C233.4 265.4 232 260.7 232 256V120C232 106.7 242.7 96 256 96C269.3 96 280 106.7 280 120L280 248.7zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"></path></svg></span>
+ 
+ <span>{{ 'sections.ecom-inspiration-page.post_published_at_odmvfnmyj97_html' | t: published_at:published_at }}</span>
+ </div>
+ </div>
+ 
+ <div class="ecom-shopify__blog--post-comments_count ecom-shopify__blog--post-informations">
+ {% if article.comments_enabled? %}
+ 
+ {% assign comments_count = article.comments_count %}
+ {% assign comment_count = article.comments_count %}
+ {% if article.comments_count == 1%}
+ <span>
+ 
+ </span>
+ {% else %}
+ <span>
+ 
+ </span>
+ {% endif %}
+ {% endif %}
+ </div>
+ </div>
+ </div>
+ {% endfor %}
+ {%- endpaginate -%}
+ {% else %}
+ <div>No posts yet!</div>
+ {% endif %}
+ 
+ </div>
+ 
+ 
+ 
+ {% assign blog = tmp_block %}
+ {% assign article = tmp_article %}
+ </div><div class="ecom-collection__product-loading ecom-dn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="margin: auto; background: none; display: block; shape-rendering: auto;"><path d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50" fill="#0a0a0a" stroke="none"><animateTransform attributeName="transform" type="rotate" dur="0.5434782608695652s" repeatCount="indefinite" keyTimes="0;1" values="0 50 51;360 50 51"></animateTransform></path></svg></div></div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div></div> </div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div></section> 
+</div></div>
+{% schema %}
+{
+ "name": "Inspiration",
+ "locales": {
+ "en": {
+ "prev_title_u1pevohge2_html": "Previous Post",
+ "next_title_u1pevohge2_html": "Next Post",
+ "post_by_author_odmvfnmyj97_html": "By {{article_author}}",
+ "post_published_at_odmvfnmyj97_html": "{{published_at}}"
+ }
+ },
+ "settings": [
+ {
+ "type": "header",
+ "content": "The section was generated by [Ecomposer](https:\/\/ecomposer.io).",
+ "info": "\n EComposer is a Visual Page Builder app on Shopify AppStore.\n It provides 100+ pre-built templates in library,\n so you can build unlimited pages that you can imagine with it.\n "
+ },
+ {
+ "type": "header",
+ "content": "[EDIT WITH EComposer APP \u2192](https:\/\/ecomposer.app\/shop\/builder?page=page&id=655bbca1aa9fb861c60bece2&utm_source=theme-customize)",
+ "info": "(*You must install the app to start editing this section [Learn more](https:\/\/help.ecomposer.io\/docs\/getting-started\/installation\/))"
+ }
+ ]
+}
+{% endschema %}

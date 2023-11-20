@@ -1,8 +1,12 @@
 {
   "sections": {
     "main": {
-      "type": "main-redirect"
+      "type": "inspiration-blog-structure",
+      "settings": {
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }

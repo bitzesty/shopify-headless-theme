@@ -1,8 +1,18 @@
 {{ collection.title }}
-{% assign collection_handle = “collection-” | append: collection.handle %}
+{% assign collection_handle = collection- | append: collection.handle %}
 <ul>
 {% for link in linklists[collection_handle].links %}
 {% assign sub_collection = link.object %}
 <li><a href=”{{ link.url }}”>{{ link.title }}</a></li>
 {% endfor %}
 </ul>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% assign collection_handle = “collection-” | append: collection.handle %}"
+  to: "{% assign collection_handle = collection- | append: collection.handle %}"
+  position: 23..95
+{% endcomment %}
